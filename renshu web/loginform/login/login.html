@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>reshu web login</title>
+        <link rel="stylesheet" href="login.css">
+    </head>
+
+    <body>
+    <div id="rain-container"></div>
+    <form>
+        <h1>LogIn</h1>
+        
+  
+        <div class="log">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="username" maxlength="15"><br>
+
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="email" maxlength="30"><br>
+
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" placeholder="password" maxlength="30"><br>
+
+            <button  class="logbut" onclick="login()" type="button">login</button>
+
+            <p class="err" id="errorid"></p>
+        </div>
+        <div class="hintdiv log" >
+           <p id="hint"></p>
+            <span id="hint1"></span>
+        </div>
+        <br>
+        <br>
+        <div class="wavecon">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </form>
+    <script src="login.js"></script>
+</body>
+</html>
