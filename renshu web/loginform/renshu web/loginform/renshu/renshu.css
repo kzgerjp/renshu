@@ -1,0 +1,260 @@
+h1{
+    margin: 0;
+    padding-top:10px;
+    text-align: center;
+    font-style: italic; 
+    color: white;
+    margin-bottom: 0;
+    text-decoration:underline pink
+}
+
+.navhead{
+    background-color: cadetblue;
+    margin: 0;
+    border-radius: 20px;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border:5px solid black;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+}
+img.fade-out{
+    opacity: 0;
+}
+
+img:hover{
+    transform: scale(2);
+    
+}
+
+.ul1{
+    display: flex;
+    justify-content:center;
+    margin: 0;
+}
+
+.li1{
+    margin-top: 0;
+    display: inline-block;
+    margin: 10px;
+    background:#315b6e;
+    border-radius: 5px;
+    padding: 5px
+}
+
+.lia{
+    text-decoration: none;
+    color: #ffffff
+}
+
+.osakapic, .Düsseldorf{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background:#ae644a;
+    color:white;
+    border-radius:10px;
+    box-shadow: 10px 10px 10px gray;
+}
+.Düsseldorf{
+    background-color: rgb(50, 50, 107);
+}
+
+.summary1{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sec1{
+    display: flex;
+    justify-content: center;
+    background-color: #aed1f0;
+}
+
+.h2{
+    text-align: center;
+    font-family: cursive;
+    text-decoration: underline;
+    color:#000000
+}
+
+.osakalink, .ramen{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.osakaan{
+    color:#315b6e;
+    text-decoration: underline;
+}
+.me{
+    display: flex;
+    justify-content:center;
+}
+
+.parentme{
+    display: flex;
+    justify-content: center;
+}
+.me.countdown{
+    font-weight: bold;
+    font-size: 50px;
+    background: #000000;
+    color: rgb(255, 0, 0);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pme{
+  text-align: center;
+  font-size: 25px;
+}
+.mebtn{
+    color:#f00000;
+    margin-left:5px;
+    font-weight:bold;
+    font-size: 16px;
+    background: #000000;
+}  
+
+.rating-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 40px;
+    color: #ccc; 
+    transition: color 0.3s ease;
+}
+
+.star:hover,
+.star.hover,
+.star.selected {
+    color: #ffcc00; 
+}
+
+#rating-value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3{
+    text-align: center;
+}
+
+#ratemsg{
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+@keyframes petal-fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg) translateX(0); 
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(50vh) rotate(180deg) translateX(var(--x-offset, 0px)); 
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg) translateX(var(--x-offset, 0px)); 
+        opacity: 0;
+    }
+}
+
+#petals {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: -1; 
+    overflow: hidden; 
+}
+
+.petal {
+    position: absolute;
+    background-color: lightpink;
+    border-radius: 30px 0 30px 0;
+    opacity: 0.7;
+    animation: petal-fall linear infinite;
+    --x-offset: 0px; 
+}
+
+.petal::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:  lightpink;
+    border-radius: 150% 0 150% 0;
+    transform: rotate(10deg);
+  }
+
+.petal:nth-child(odd) {
+    background-color: lightpink;
+}
+
+.petal:nth-child(even) {
+    background-color: lightpink;
+}
+body{
+    background:#f0f3d6
+}
+
+.sum2{
+    cursor: pointer;
+}
+
+.addiv{
+    display: grid;
+    grid-template-areas:"ad-2 ad-2 ad-1";
+    background: #66493e;
+    color: white;
+}
+.adre{
+    grid-area: ad-1;
+    justify-self: end;
+    align-self: end;
+   
+}
+.adad{
+    grid-area: ad-2; 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
